@@ -1,0 +1,37 @@
+<br><br><br><br>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-9 col-sm-12 col-xs-12">
+            <input type="text" placeholder="Enter Employee Id here..." class="form-control" name="empid"
+            [(ngModel)] = "empid">
+        </div>
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+            <button type="button" class="btn btn-info" (click) = "findByEmpid()">Search</button>
+        </div>
+    </div>
+
+
+<div class="col-lg-12 col-sm-12 col-xs-12"[hidden] = "isHided">
+    <h2 class="mt-5"><b>Result</b></h2>
+    <table class="table">
+        <thead>
+            <tr class="bg-info text-light">
+                <td>Employee Id</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Contact</td>
+                <td>Email Id</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{employee.empid}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.age}}</td>
+                <td>{{employee.contact}}</td>
+                <td>{{employee.emailid}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

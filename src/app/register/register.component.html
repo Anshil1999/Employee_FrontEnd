@@ -1,0 +1,29 @@
+<div class="right">
+<form id="myForm">  
+  <div class="container">  
+   <h1> Student Registeration Form</h1> 
+  <hr>  
+<label> <b>Name:&nbsp; </b></label>    
+<input type="text" name="name" [(ngModel)]="employee.name" placeholder="Enter your name here..." size="25"required />   
+<br>
+<label><b> Employee Id:&nbsp; </b></label>    
+<input type="text" name="empid"[(ngModel)]="employee.empid" placeholder="Enter your Employee Id here..." size="25"required />
+<br>
+<label><b>Age: &nbsp;</b></label>    
+<input type="text" name="age" [(ngModel)]="employee.age" required />
+<br>
+<label><b>
+Phone:&nbsp;</b>
+</label>  
+<input type="text" name="country code" [(ngModel)]="employee.contact" placeholder="Enter your contact Details..." size="10"/>  <br> 
+ <label for="email"><b>Email:&nbsp;</b></label>
+ <input type="text" placeholder="@infosys.com"[(ngModel)]="employee.emailid" name="email" required>  <br>
+<button type="submit" class="registerbtn" (click) = "registerNow()" onclick="myFunction()">Register</button>    
+    </div>
+</form>  
+</div>
+<div class="text-center">
+  <h2>
+    {{ message }}
+  </h2>
+</div>

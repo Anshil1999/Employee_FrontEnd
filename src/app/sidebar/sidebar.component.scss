@@ -1,0 +1,23 @@
+.w3-sidebar{
+    padding-top: 5%;
+    background: linear-gradient(to bottom, #33ccff 0%, #660066 100%);
+    border-radius: 10%;
+    position: fixed;
+    top: 65px;
+    left: 0px;
+    }
+    .w3-bar-item{
+        color: white;
+        font-size: xx-large;    
+        
+    }
+    .w3-bar-item:hover{
+        background: linear-gradient(to bottom, #33ccff 0%, #9900cc 100%);
+        border-radius: 25%;
+    }
+    i{
+        font-size:36px;color:black;
+    }
+    a{
+        text-align:center;
+    }
